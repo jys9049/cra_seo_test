@@ -1,20 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import testImg from './assets/testImg.jpeg'
-import MetaTags from './util/MetaTags';
+import { Route, Routes } from 'react-router-dom';
+import Header from './components/header/Header';
+import MainPage from './pages/MainPage';
+import SubPage from './pages/SubPage';
+import SubTwoPage from './pages/SubTwoPage';
 
 function App() {
 
-  const metaTagProps = {
-    title: "SEO 테스트",
-    description: "react-snap, react-helmet-async 테스트 입니다.",
-    image: testImg
-  }
+
 
   return (
     <>
-      <MetaTags {...metaTagProps} />
-      <h1>hellow~</h1>
+      <Header />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/sub" element={<SubPage />} />
+        <Route path="/sub2" element={<SubTwoPage />} />
+      </Routes>
     </>
   );
 }
