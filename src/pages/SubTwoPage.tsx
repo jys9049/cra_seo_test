@@ -13,9 +13,9 @@ const SubTwoPage = ({ data }: IMainPage) => {
   const param = useParams()
   const intParam = Number(param.id)
   const [metaTag] = useState({
-    title: data[intParam].title,
-    description: data[intParam].title,
-    image: data[intParam].thumbnailUrl,
+    title: data[intParam]?.title,
+    description: data[intParam]?.title,
+    image: data[intParam]?.thumbnailUrl,
   })
 
   return (
