@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import testImg from '../assets/testImg.jpeg'
 import MetaTags from '../util/MetaTags';
 
@@ -16,6 +16,7 @@ const MainPage = () => {
         메인페이지 입니다.
         <img src={testImg} alt="강아지" width="150px" height="150px" />
       </div>
+      <Outlet />
     </>
   );
 };

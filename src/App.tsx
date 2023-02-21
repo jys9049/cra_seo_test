@@ -12,9 +12,10 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/sub" element={<SubPage />} />
-        <Route path="/sub2/:id" element={<SubTwoPage />} />
+        <Route path="/" element={<MainPage />}>
+          <Route path="/sub" element={<SubPage />} />
+          <Route path="/sub2/:id" element={<SubTwoPage />} />
+        </Route>
       </Routes>
     </>
   );
