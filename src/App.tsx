@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import testImg from './assets/testImg.jpeg'
 import MetaTags from './util/MetaTags';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
   const metaTagProps = {
     title: "SEO 테스트",
     description: "react-snap, react-helmet-async 테스트 입니다.",
-    image: logo
+    image: testImg
   }
 
   return (
