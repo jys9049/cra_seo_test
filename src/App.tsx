@@ -5,9 +5,6 @@ import SubPage from './pages/SubPage';
 import SubTwoPage from './pages/SubTwoPage';
 
 function App() {
-
-
-
   return (
     <>
       <Header />

@@ -1,5 +1,4 @@
 import React from 'react';
-import testImg1 from '../assets/testImg1.jpeg'
 import testImg2 from '../assets/testImg2.jpeg'
 import MetaTags from '../util/MetaTags';
 

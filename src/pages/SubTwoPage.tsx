@@ -22,7 +22,7 @@ const SubTwoPage = () => {
     <>
       <MetaTags {...metaTagProps} />
       <div style={{ display: "flex", flexDirection: "column", marginTop: "40px" }}>
-        서브2페이지 입니다.
+        {`서브${params.id} 페이지 입니다.`}
         <img src={params.id === "1" ? testImg : testImg2} alt="강아지" width="150px" height="150px" />
       </div>
     </>
