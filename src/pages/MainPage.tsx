@@ -13,7 +13,7 @@ const MainPage = () => {
     <>
       <MetaTags {...metaTagProps} />
       <div style={{ display: "flex", flexDirection: "column", marginTop: "40px" }}>
-        메인페이지 입니다.
+        메인페이지 입니다. 아웃렛 테스트
         <img src={testImg} alt="강아지" width="150px" height="150px" />
       </div>
       <Outlet />
