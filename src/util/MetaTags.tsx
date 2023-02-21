@@ -11,6 +11,7 @@ export const MetaTags = ({
   description,
   image,
 }: IMetaTags) => {
+  console.log(image)
   return (
     <>
       <Helmet>
@@ -19,6 +20,8 @@ export const MetaTags = ({
         <meta property='og:title' content={title} />
         <meta property='og:image' content={image} />
         <meta property='og:description' content={description} />
+        <meta property='og:image:width' content='200' />
+        <meta property='og:image:height' content='200' />
       </Helmet>
     </>
   );

@@ -8,7 +8,7 @@ function App() {
   const metaTagProps = {
     title: "SEO 테스트",
     description: "react-snap, react-helmet-async 테스트 입니다.",
-    image: JSON.stringify(logo)
+    image: logo
   }
 
   return (
