@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import testImg from '../assets/testImg.jpeg'
-import testImg2 from '../assets/testImg2.jpeg'
 import { IData } from '../types/dataType';
 import MetaTags from '../util/MetaTags';
 
