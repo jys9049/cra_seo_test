@@ -12,8 +12,6 @@ const SubTwoPage = ({ data }: IMainPage) => {
   const param = useParams()
   const intParam = Number(param.id)
 
-  console.log(data)
-
   const [metaTag, setMetaTag] = useState({
     title: '',
     description: '',
@@ -37,17 +35,11 @@ const SubTwoPage = ({ data }: IMainPage) => {
 
   return (
     <>
-      {loading === false ?
-        <>
-          <MetaTags {...metaTag} />
-          <div style={{ display: "flex", flexDirection: "column", marginTop: "40px" }}>
-            {`서브${param.id} 페이지 입니다.`}
-            <img src={metaTag.image} alt="강아지" width="150px" height="150px" />
-          </div>
-        </>
-        :
-        <div>Loading...</div>
-      }
+      <MetaTags {...metaTag} />
+      <div style={{ display: "flex", flexDirection: "column", marginTop: "40px" }}>
+        {`서브${param.id} 페이지 입니다.`}
+        <img src={metaTag.image} alt="강아지" width="150px" height="150px" />
+      </div>
     </>
   );
 };

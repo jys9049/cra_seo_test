@@ -23,15 +23,12 @@ const MainPage = ({ data }: IMainPage) => {
       </div>
       <div>
         {data.map(item => (
-          <Link to={`/sub2/${item.id}`} key={item.id} >
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <span>{item.title}</span>
-              <img src={item.thumbnailUrl} alt="썸네일" width="150px" />
-            </div>
-          </Link>
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <span>{item.title}</span>
+            <img src={item.thumbnailUrl} alt="썸네일" width="150px" />
+          </div>
         ))}
       </div>
-      <Outlet />
     </>
   );
 };

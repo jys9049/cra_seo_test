@@ -24,15 +24,13 @@ function App() {
     getData()
   }, [])
 
-  console.log(data)
-
   return (
     <>
       <Header />
       <Routes>
         <Route path="/" element={<MainPage data={data} />} />
         <Route path="/sub" element={<SubPage />} />
-        <Route path="/sub2/:id" element={<SubTwoPage data={data} />} />
+        <Route path="/sub2" element={<SubTwoPage data={data} />} />
       </Routes>
     </>
   );
